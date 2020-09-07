@@ -6,29 +6,22 @@ Created on Fri Aug 28 16:28:10 2020
 @author: AnnieGomez
 """
 
-# Initializing varibles
-x=0
-x = input ("Choose 1 to convert from Farenheit to Celsuis; Choose 2 to convert from Celsius to Farenheit: ")
-x = int(x)
+# Getting user inputs
+print("I am here")
+x = int(input("Choose 1 to convert from Fahrenheit to Celsius; Choose 2 to convert from Celsius to Fahrenheit: "))
 
-# to convert from Farenheit to Celsius
-if (x==1):
-    # Initializing varibles 
-    f=0
-    c=0
-    f = input ("Enter the temperature in Farenheit: ")
-    f = int(f)
+# to convert from Fahrenheit to Celsius
+if x == 1:
+    # Initializing variables
+    f = float(input("Enter the temperature in Fahrenheit: "))
     c = (f-32)*5/9
-    c = int(c)
+    c = float(c)
     print("Temperature in Celsius: {}".format(c))
     
-# to convert from Celsuis to Farenheit 
-if (x==2):
+# to convert from Celsius to Fahrenheit
+if x == 2:
     # Initializing variables
-    f=0
-    c=0
-    c = input ("Enter the temperature in Celsuis: ")
-    c = int(c)
+    c = float(input("Enter the temperature in c: "))
     f = c/5*9+32
-    f = int(f)
-    print("Temperature in Farenheit: {}".format(f))
+    f = float(f)
+    print("Temperature in Fahrenheit: {}".format(f))
