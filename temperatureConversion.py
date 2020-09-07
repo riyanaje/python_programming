@@ -7,12 +7,11 @@ Created on Fri Aug 28 16:28:10 2020
 """
 
 # Getting user inputs
-print("I am here")
 x = int(input("Choose 1 to convert from Fahrenheit to Celsius; Choose 2 to convert from Celsius to Fahrenheit: "))
 
 # to convert from Fahrenheit to Celsius
 if x == 1:
-    # Initializing variables
+    # Get temperature in Fahrenheit from user
     f = float(input("Enter the temperature in Fahrenheit: "))
     c = (f-32)*5/9
     c = float(c)
@@ -20,8 +19,10 @@ if x == 1:
     
 # to convert from Celsius to Fahrenheit
 if x == 2:
-    # Initializing variables
+    # Get temperature in Celsius from user
     c = float(input("Enter the temperature in c: "))
     f = c/5*9+32
     f = float(f)
     print("Temperature in Fahrenheit: {}".format(f))
+
+exit()
